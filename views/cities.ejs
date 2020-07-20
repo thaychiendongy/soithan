@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("head") %>
+<body>
+<section class="section">
+    <div class="container">
+       <ul class="cities">
+           <% cities.map(function (e){ %>
+               <li><h2><a href="/thanh-pho/<%= e.id %>"><%= e.label %></a></h2></li>
+           <% }) %>
+       </ul>
+    </div>
+</section>
+
+</body>
+</html>
