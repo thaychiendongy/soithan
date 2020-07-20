@@ -69,3 +69,6 @@ app.get("/api/messages",function (req,res) {
    };
    res.send(rs);
 });
+app.get("/home",function(req,res){
+    res.render("home");
+});
